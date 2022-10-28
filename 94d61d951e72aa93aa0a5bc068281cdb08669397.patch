@@ -1,0 +1,21 @@
+From 94d61d951e72aa93aa0a5bc068281cdb08669397 Mon Sep 17 00:00:00 2001
+From: jonri <jonri@users.noreply.github.com>
+Date: Fri, 28 Oct 2022 11:04:17 -0400
+Subject: [PATCH] Add 3.5.0 release information to metainfo
+
+---
+ install/net.darkradiant.DarkRadiant.metainfo.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/install/net.darkradiant.DarkRadiant.metainfo.xml b/install/net.darkradiant.DarkRadiant.metainfo.xml
+index 41419db01..758ce5886 100644
+--- a/install/net.darkradiant.DarkRadiant.metainfo.xml
++++ b/install/net.darkradiant.DarkRadiant.metainfo.xml
+@@ -69,6 +69,7 @@
+   <launchable type="desktop-id">net.darkradiant.DarkRadiant.desktop</launchable>
+ 
+   <releases>
++    <release version="3.5.0" date="2022-10-28"/>
+     <release version="3.4.0" date="2022-10-09"/>
+     <release version="3.3.0" date="2022-09-23"/>
+     <release version="3.2.0" date="2022-09-03"/>

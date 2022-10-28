@@ -55,6 +55,10 @@ modules:
   - name: darkradiant
     buildsystem: cmake-ninja
     sources:
-      - type: git
-        url: https://github.com/codereader/DarkRadiant.git
-        commit: bd348305042b225906da3324499b54d8be7f6ba7
+      - type: archive
+        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.5.0.tar.gz
+        sha256: a5a5e87f607779976a5b5c98bf51a1fa9ca254d4bbbdae7f572865c85dd0a7d8
+      - type: patch
+        path: 8b5bfc8a23f8e60beb83bfebdf2c3026baf10269.patch
+      - type: patch
+        path: 94d61d951e72aa93aa0a5bc068281cdb08669397.patch
