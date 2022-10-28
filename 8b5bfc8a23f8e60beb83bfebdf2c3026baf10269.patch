@@ -1,0 +1,21 @@
+From 8b5bfc8a23f8e60beb83bfebdf2c3026baf10269 Mon Sep 17 00:00:00 2001
+From: codereader <greebo@angua.at>
+Date: Fri, 28 Oct 2022 14:33:27 +0200
+Subject: [PATCH] Fix missing MediaBrowser module in Linux
+
+---
+ radiant/CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/radiant/CMakeLists.txt b/radiant/CMakeLists.txt
+index 4ab172034..04c9c64f6 100644
+--- a/radiant/CMakeLists.txt
++++ b/radiant/CMakeLists.txt
+@@ -120,6 +120,7 @@ add_executable(darkradiant
+                ui/mapinfo/ShaderInfoTab.cpp
+                ui/mediabrowser/MediaBrowser.cpp
+                ui/mediabrowser/MediaBrowserTreeView.cpp
++               ui/mediabrowser/MediaBrowserModule.cpp
+                ui/modelexport/ConvertModelDialog.cpp
+                ui/modelexport/ExportAsModelDialog.cpp
+                ui/modelexport/ExportCollisionModelDialog.cpp
