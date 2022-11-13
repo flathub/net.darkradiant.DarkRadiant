@@ -14,7 +14,7 @@ finish-args:
 cleanup:
   - /bin/wx-config
   - /bin/wxrc
-  - /bin/wxrc-3.0
+  - /bin/wxrc-3.2
   - /include
   - /lib/cmake
   - /lib/pkgconfig
@@ -56,9 +56,5 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.5.0.tar.gz
-        sha256: a5a5e87f607779976a5b5c98bf51a1fa9ca254d4bbbdae7f572865c85dd0a7d8
-      - type: patch
-        path: 8b5bfc8a23f8e60beb83bfebdf2c3026baf10269.patch
-      - type: patch
-        path: 94d61d951e72aa93aa0a5bc068281cdb08669397.patch
+        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.6.0.tar.gz
+        sha256: 033f3febed930be333b573c6cd4ce84e16762a8bb7e8381f062c51a27290aa11
