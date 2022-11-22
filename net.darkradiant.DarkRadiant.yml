@@ -56,5 +56,7 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.6.0.tar.gz
-        sha256: 033f3febed930be333b573c6cd4ce84e16762a8bb7e8381f062c51a27290aa11
+        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.7.0.tar.gz
+        sha256: c8d52dc1ca98ca10a93bf698e7e12c6ac761f12f8f210e403bad72e842155737
+      - type: patch
+        path: d9145c3015d945014daeb829f22d8cdb94a2aa8f.patch
