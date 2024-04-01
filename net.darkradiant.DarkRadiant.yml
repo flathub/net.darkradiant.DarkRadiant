@@ -1,6 +1,6 @@
 app-id: net.darkradiant.DarkRadiant
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: darkradiant
 rename-desktop-file: darkradiant.desktop
@@ -31,8 +31,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz
-        sha256: 235a40bec7346c7b82b6a8caae0456353dc06e71f14bc414bcc858af1838719a
+        url: https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz
+        sha256: a9dbee323351d109b7aee074a9cb89ca3e7bcf8ad8edef1851f4cf359bd50843
   - name: libftgl
     buildsystem: cmake-ninja
     sources:
@@ -50,13 +50,13 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.1/wxWidgets-3.2.1.tar.bz2
-        sha1: b5299275abddc7cb5fa92f75c17475ade3bc0532
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
+        sha1: 1fa54302c7ef6c86fa4311d303abd79a85b127a5
   - name: darkradiant
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.8.0.tar.gz
-        sha256: 7b9ccd6de65d7e55f6aad5e1f9a2f49600c6a0d9d70e67bda2e625cd721b5635
+        url: https://github.com/codereader/DarkRadiant/archive/refs/tags/3.9.0.tar.gz
+        sha256: 719311456ec1a86314b6c385fa46ae1356245018a041e534f15aa5ffb0a2fb58
       - type: patch
-        path: 3e9d39db88ed8de98b4686728dee36bb8e6d0f7c.patch
+        path: post_release.patch
