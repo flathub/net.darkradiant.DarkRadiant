@@ -1,6 +1,6 @@
 app-id: net.darkradiant.DarkRadiant
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: darkradiant
 rename-desktop-file: darkradiant.desktop
@@ -35,10 +35,12 @@ modules:
         sha256: a9dbee323351d109b7aee074a9cb89ca3e7bcf8ad8edef1851f4cf359bd50843
   - name: libftgl
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/frankheckenbach/ftgl.git
-        commit: 36e8cd683492456def3b6a54c6dcb56cd6ee4bb4
+        commit: 1f2b47428ec6a6452a3be5c7a916b94c65df80ce
   - name: eigen
     buildsystem: cmake-ninja
     builddir: true
@@ -48,6 +50,8 @@ modules:
         sha256: b4c198460eba6f28d34894e3a5710998818515104d6e74e5cc331ce31e46e626
   - name: wxgtk3
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: archive
         url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
